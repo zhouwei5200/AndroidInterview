@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabStripView">
+        <attr name="navigateTabTextColor" format="color|reference" />
+        <attr name="navigateTabSelectedTextColor" format="color|reference" />
+        <attr name="containerId" format="integer|reference" />
+        <attr name="navigateTabTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="bordaoRadius" format="dimension" /> <!--我们想要的角度-->
+        <attr name="type">          <!--在这里面定义我们想要的类型-->
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+    </declare-styleable>
+    <string-array name="tabs">
+        <item>android</item>
+
+        <item>java基础</item>
+        <item>设计模式</item>
+        <item>算法部分</item>
+    </string-array>
+    <declare-styleable name="superrecyclerview">
+        <attr name="layout_empty" format="reference" />
+        <attr name="layout_progress" format="reference" />
+        <attr name="layout_error" format="reference" />
+        <attr name="recyclerClipToPadding" format="boolean" />
+        <attr name="recyclerPadding" format="dimension" />
+        <attr name="recyclerPaddingTop" format="dimension" />
+        <attr name="recyclerPaddingBottom" format="dimension" />
+        <attr name="recyclerPaddingLeft" format="dimension" />
+        <attr name="recyclerPaddingRight" format="dimension" />
+        <attr name="scrollbarStyle">
+            <enum name="insideOverlay" value="0x0" />
+            <enum name="insideInset" value="0x01000000" />
+            <enum name="outsideOverlay" value="0x02000000" />
+            <enum name="outsideInset" value="0x03000000" />
+        </attr>
+    </declare-styleable>
+
+    <!-- FunGameHeader -->
+    <declare-styleable name="FunGameHeader">
+        <attr name="game_type" format="enum">
+            <enum name="hit_block" value="0" />
+            <enum name="battle_city" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- FunGameView -->
+    <declare-styleable name="FunGame">
+        <attr name="left_model_color" format="color" />
+        <attr name="middle_model_color" format="color" />
+        <attr name="right_model_color" format="color" />
+    </declare-styleable>
+
+    <!-- HitBlockView -->
+    <declare-styleable name="HitBlock">
+        <attr name="block_horizontal_num" format="integer" />
+        <attr name="ball_speed" format="integer">
+            <enum name="low" value="3" />
+            <enum name="medium" value="6" />
+            <enum name="fast" value="9" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MaterialSearchView">
+        <attr name="searchBackground" format="integer" />
+        <attr name="searchVoiceIcon" format="integer" />
+        <attr name="searchCloseIcon" format="integer" />
+        <attr name="searchBackIcon" format="integer" />
+        <attr name="searchSuggestionBackground" format="integer" />
+        <attr name="android:hint" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+    </declare-styleable>
+
+
+</resources>

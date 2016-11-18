@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/fragment_background" />
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_select"
+      >
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="19dp"
+            android:text="handler的流及原理"
+            android:textColor="@color/titlecolor"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_author_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_desc"
+            android:layout_below="@id/item_desc"
+            android:layout_marginTop="5dp"
+            android:text="发布者 :"
+            android:textColor="@color/autorcolor"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/item_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_author_font"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/tv_author_font"
+            android:text="zhou12314"
+            android:textColor="@color/autorcolor"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/importan_star_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_author_font"
+            android:layout_below="@id/tv_author_font"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="重要指数:"
+            android:textColor="@color/indexcolor"
+            android:textSize="12dp" />
+        <RatingBar
+            android:id="@+id/ll_rb_star"
+            style="@style/custom_ratingbar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/importan_star_title"
+            android:layout_marginLeft="5dp"
+           android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/importan_star_title"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="0.5" />
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/importan_star_title"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="2dp"
+            android:text="2016年8月8日"
+            android:textColor="@color/autorcolor"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

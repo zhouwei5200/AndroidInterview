@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+          <android.support.v7.widget.Toolbar
+              android:id="@+id/toolbar"
+              android:background="@color/colorPrimary"
+              app:popupTheme="@style/AppTheme.PopupOverlay"
+              app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+              app:layout_scrollFlags="scroll|enterAlways"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize">
+          </android.support.v7.widget.Toolbar>
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:id="@+id/tabLayout"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                ></android.support.design.widget.TabLayout>
+        </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/content_main" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:visibility="invisible"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="10dp"
+            android:src="@mipmap/add_article" />
+    </android.support.design.widget.CoordinatorLayout>
+    <com.guowei.android.widght.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.guowei.android.widght.MaterialSearchView>
+
+</com.jude.fitsystemwindowlayout.FitSystemWindowsRelativeLayout>

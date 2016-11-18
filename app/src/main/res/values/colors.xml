@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="abc_theme_black_7f">#7f000000</color>
+    <color name="abc_tab_text_normal">#212121</color>
+    <color name="abc_white">#ffffff</color>
+    <color name="black">#dd000000</color>
+    <color name="mcolorapp">#796FFF</color>
+    <color name="popup_bg">#8f000000</color>
+    <color name="line_bg">#CDCDCD</color>
+    <color name="gray">#808080</color>
+    <color name="fragment_background">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="touched">#FCFFF6</color>
+    <color name="titlecolor">#313131</color>
+    <color name="indexcolor">#606060</color>
+    <color name="autorcolor">#999999</color>
+    <color name="search_layover_bg">#50000000</color>
+
+</resources>
